@@ -33,7 +33,7 @@ class Auth extends React.Component {
   componentWillUnmount() {
     document.body.classList.remove("bg-default");
   }
-  getRoutes = routes => {
+  getRoutes = (routes) => {
     return routes.map((prop, key) => {
       if (prop.layout === "/auth") {
         return (
@@ -52,7 +52,7 @@ class Auth extends React.Component {
     return (
       <>
         <div className="main-content">
-          <AuthNavbar />
+          {/* <AuthNavbar /> */}
           <div className="header bg-gradient-info py-7 py-lg-8">
             <Container>
               <div className="header-body text-center mb-7">
